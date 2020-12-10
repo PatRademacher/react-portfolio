@@ -1,38 +1,542 @@
-.App {
+.header-color{
+  background: #0cf2ad; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,  #556270, #0cf2ad); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #556270, #0cf2ad); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing-grid{
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: absolute;
   text-align: center;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  padding-top: 20em;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.avatar-img{
+  border-style: solid;
+  border-width: 1px;
+  border-color: silver;
+  border-width: #ccc1c2;
+  max-width: 162;
+  max-height: 265;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.separator{
+  padding-top: 7em;
+}
+
+.banner-text{
+  background-color: black;
+  opacity: .8;
+  margin: auto;
+  padding: 2em;
+  width: 100%;
+  
+  
+}
+
+.banner-text h1 {
+  font-size: calc(2.6em + 1vw);
+  font-weight: bold;
+  color: white;
+  width: 80%;
+  margin: auto;
+}
+
+.banner-text h1 .blast {
+  will-change: transform;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  color: green;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 80%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: blue;
+  font-size: .7em;
+  padding: 1em;
+}
+
+
+
+.fab{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: auto;
+  color: #4ecf92;
+}
+
+.social-links i {
+  color: #0cf2ad;
+  font-size: 5em;
+}
+
+.projects-grid {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    border-radius: 50%;
+  }
+  50% {
+  }
+  100% {
+    transform: scale(1.0);
   }
 }
+.cardButtons {
+  display: flex;
+  justify-content: center;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-body {
+  margin: auto;
+  background: grey;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  border: 2px solid red;
+  margin-bottom: 20px;
+}
+
+.contact-grid h2 {
+  font-family: 'Anton', sans-serif;
+}
+
+.contact-grid p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 66px;
+  padding-right: 5rem;
+}
+
+/* Resume Page css */
+
+.resume-center {
+  background: #556270;
+  color: white;
+  padding: 1px;
+  border: solid salmon 4px;
+  z-index: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.resume-border{
+  border: solid salmon 4px;
+}
+
+.containers{
+  display: inline;
+  justify-content: center;
+  position: relative;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 3px;
+  margin: auto;
+
+}
+
+
+
+.projectTabs{
+  text-decoration: none;
+  
+}
+
+.videoTag {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.videoTagResume{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.tabz:focus{
+  outline: none !important;
+  color: #eeffee;
+  font-size: 48px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.Parallax {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+.Parallax__background-michiganstate, .Parallax__background-guitar, .Parallax__background-main{
+  width: 85%;
+  height: 1398px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+
+
+.Parallax__background-guitar-notes{
+  width: 900px;
+  height: 440px;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  z-index: -1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Parallax__background-michiganstateSparty{
+  width: 100%;
+  height: 745px;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  z-index: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 35em;
+}
+
+.Parallax__background-michiganstate {
+  background-image: url("./backgroundMichiganStateMedium.jpg");
+
+}
+
+.Parallax__background-guitar{
+  background-image: url("./neonbrand-xZVpN0RSS48-unsplash.jpg");
+}
+
+.Parallax__background-main{
+  background-image: url("./aboutMeMedium.jpg");
+}
+
+.Parallax__background-guitar-notes {
+  background-image: url("./notes-311995_1280.png");
+  animation: shake 2.5s;
+  animation-iteration-count: infinite;
+  margin-top: 55em;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.Parallex__background-michiganstate{
+  background-image: url("./backgroundMichiganStateMedium.jpg");
+}
+
+.Parallax__background-michiganstateSparty{
+  
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  z-index: -1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Parallax__background-michiganstateSpartyRun{
+  bottom:5%;
+  position:absolute;
+  animation:linear infinite alternate;
+  animation-name: run;
+  animation-duration: 15s;
+}
+
+
+@keyframes run{
+  0% { left: 0;}
+  50%{ left : 100%;}
+  100%{ left: 0;}
+}
+
+.Parallax__content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
+  margin-top: 100px;
+}
+.Parallax__content__heading, .Parallax__content__cta {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.Parallax__content__heading {
+  background-color: rgb(36, 36, 36);
+  width: 55%;
+  padding: 40px;
+  opacity: .7;
+}
+.Parallax__content__heading__text {
+  margin: 10px 0;
+  font-size: 8em;
+  color: #0cf2ad;
+}
+.Parallax__content__heading__caption {
+  margin: 0;
+  font-size: 20px;
+}
+.Parallax__content__cta {
+  background-color: #0cf2ad;
+  width: 60%;
+  padding: 40px;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 120px;
+}
+
+.custom-class {
+  width: 100%;
+  height: 380px;
+}
+
+.nonactiveCols{
+  background-color:  #463239;
+  color: #A6C9AA;
+  opacity: .9;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  display: flex;
+  bottom: 0;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  border-bottom: solid #463239 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 7vh;
+  position: relative;
+  border-left: solid #c8d2db 2px;
+  border-right: solid #c8d2db 2px;
+  border-bottom: solid #c8d2db 4px;
+  
+
 }
 
-.App-link {
-  color: #61dafb;
+.nonactiveColsHover{
+  color:  #556270;
+  background-color: #ee8d8d;
+  opacity: .9;
+  text-align: center;
+  height: 100%;
+  font-family: 'Fredoka One', cursive;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 7vh; 
+  position: relative;
+  border-left: solid #556270 2px;
+  border-right: solid #556270 2px;
+  border-bottom: solid #556270 4px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nonactiveCols .wiggles{
+  letter-spacing: .033vh;
+  display: inline;
+  bottom: 0;
+  font-size: 1.31vw;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  text-align: center;
+
+}
+
+.nonactiveColsHover .wiggles{
+  animation: shake 4s;
+  animation-iteration-count: infinite;
+  letter-spacing: .033vh;
+  display: flex;
+  bottom: 0;
+  font-size: 1.31vw;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  text-align: center;
+}
+
+/*.nonactiveCols .wiggles:hover{
+  animation: shake 4s;
+  font-size: 1.4vw;
+  letter-spacing: .43vh;
+  display: flex;
+  align-self: flex-end;
+  overflow: hidden;
+  white-space: nowrap;
+
+}*/
+
+.activeCol{
+  background-color:  #556270;
+  color: #ee8d8d;  
+  opacity: .9;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  display: flex;
+  bottom: 0;
+  justify-content: center;
+  height: 100%;
+  border-bottom: solid #463239 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 7vh;
+  position: relative;
+  border-bottom: solid #ffffcc 4px;
+  border-left: solid #ffffcc 2px;
+  border-right: solid #ffffcc 2px;
+  animation: bottom-border-left-right 3s 1;
+
+
+}
+
+.activeCol .wiggles{
+  letter-spacing: .033vh;
+  display: inline;
+  bottom: 0;
+  font-size: 1.57vw;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  text-align: center;
+
+}
+
+.activeCol .wiggles:hover{
+  
+  font-size: 1.57vw;
+  letter-spacing: .033vh;
+  display: inline-block;
+  align-self: flex-end;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: shake 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bottom-border-left-right{
+  0% {border-bottom: solid #463239 4px; border-left: solid #463239 2px; border-right: solid #463239 2px;}
+  1% {border-bottom: solid #4f9e69 4px; border-left: solid #4f9e69 2px; border-right: solid #4f9e69 2px;}
+  2% {border-bottom: solid #b64e72 4px; border-left: solid #b64e72 2px; border-right: solid #b64e72 2px;}
+  3% {border-bottom: solid #4b3674 4px; border-left: solid #4b3674 2px; border-right: solid #4b3674 2px;}
+  4% {border-bottom: solid #c5d153 4px; border-left: solid #c5d153 2px; border-right: solid #c5d153 2px;}
+  5% {border-bottom: solid #9cdde2 4px; border-left: solid #9cdde2 2px; border-right: solid #9cdde2 2px;}
+  6% {border-bottom: solid #33c905 4px; border-left: solid #33c905 2px; border-right: solid #33c905 2px;}
+  7% {border-bottom: solid #f0c3ce 4px; border-left: solid #f0c3ce 2px; border-right: solid #f0c3ce 2px;}
+  8% {border-bottom: solid sandybrown 4px; border-left: solid sandybrown 2px; border-right: solid sandybrown 2px;}
+  9% {border-bottom: solid #ffffcc 4px; border-left: solid #ffffcc 2px; border-right: solid #ffffcc 2px;}
+  10% {border-bottom: solid #463239 4px; border-left: solid #463239 2px; border-right: solid #463239 2px;}
+  20% {border-bottom: solid #4f9e69 4px; border-left: solid #4f9e69 2px; border-right: solid #4f9e69 2px;}
+  30% {border-bottom: solid #b64e72 4px; border-left: solid #b64e72 2px; border-right: solid #b64e72 2px;}
+  40% {border-bottom: solid #4b3674 4px; border-left: solid #4b3674 2px; border-right: solid #4b3674 2px;}
+  50% {border-bottom: solid #c5d153 4px; border-left: solid #c5d153 2px; border-right: solid #c5d153 2px;}
+  60% {border-bottom: solid #9cdde2 4px; border-left: solid #9cdde2 2px; border-right: solid #9cdde2 2px;}
+  100% {border-bottom: solid #ffffcc 4px; border-left: solid #ffffcc 2px; border-right: solid #ffffcc 2px;}
+  
+  
+}
+
+#contact-form{
+  padding: 2px;
+  border: solid #4b3674 4px;
+  background-color: silver;
+  opacity: .98;
+
+}
+
+.projectsPageHeader{
+  text-align: center;
+  color: #ffffcc;
+  font-family: 'Fredoka One', cursive;
+  opacity: 1;
+
+
 }
