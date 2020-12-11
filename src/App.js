@@ -11,8 +11,8 @@ class App extends Component {
     render() {
         return (
             <div className="demo-big-content" >
-                <Layout style={{top: '0'}}>
-                    <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">My Portfolio</Link>} scroll>
+                <Layout style={{top: '0', height: '900px'}}>
+                    <Header className="header-color" title={<Link style={{color: 'white', height: '900px'}} to="/">My Portfolio</Link>} scroll>
                         <Navigation>
                             <Link to="/resume">Resume</Link>
                             <Link to="/aboutme">About Me</Link>

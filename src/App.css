@@ -128,9 +128,9 @@
   justify-content: center;
   width: 80%;
   height: 550px;
-  background: white;
+  background: #ddffff;
   color: black;
-  border: 2px solid red;
+  border: 2px solid #ab20fd;
   margin-bottom: 20px;
 }
 
@@ -384,14 +384,13 @@
   text-align: center;
   font-family: 'Fredoka One', cursive;
   display: flex;
-  bottom: 0;
+  flex-direction: row-reverse;
   justify-content: center;
   height: 100%;
   border-bottom: solid #463239 4px;
-  overflow: hidden;
   white-space: nowrap;
   height: 7vh;
-  position: relative;
+  position: sticky;
   border-left: solid #c8d2db 2px;
   border-right: solid #c8d2db 2px;
   border-bottom: solid #c8d2db 4px;

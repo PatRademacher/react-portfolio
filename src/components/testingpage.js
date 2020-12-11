@@ -47,7 +47,7 @@ import NumericalComputationMain from "./projectPages/NumericalComputation/Numeri
 import NumericalComputationProject0 from "./projectPages/NumericalComputation/NumericalComputationProject0";
 import NumericalComputationProject1 from "./projectPages/NumericalComputation/NumericalComputationProject1";
 import NumericalComputationProject2 from "./projectPages/NumericalComputation/NumericalComputationProject2";
-
+import {Navigation} from 'react-mdl';
 
 
 class TestingPage extends Component{
@@ -55,6 +55,8 @@ class TestingPage extends Component{
     
     constructor(props){
         super(props);
+        this.projectTabs = React.createRef();
+        this.displayProjects = React.createRef();
         this.state={
             colStates: ["nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols"],
             backgrounds: [pic0, pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, pic14],
@@ -99,10 +101,12 @@ class TestingPage extends Component{
                                     <NumericalComputationProject2 tester="5" showingDetail = "true" changeShowing={() => this.showDetails(null)}/>
                                     ],        
                                 ],
+                                   
             currentCloseUpIndex: -1,
             currentHover: -1,
             currentPageIndex: -1,
             currentHeader: 'PROJECTS',
+            rollDown: false,
             headers: ['ARTIFICIAL INTELLIGENCE', 'MACHINE LEARNING', 'DATABASES', 'INTERNETWORKING PROTOCOLS', 'MUSIC AND DIGITAL SIGNAL PROCESSING', 'SOFTWARE ENGINEERING', 'FUNCTIONAL PROGRAMMING', 'FRONT-END WEB DEVELOPMENT', 'FRACTALS', 'OPEN SOURCE', 'NUMERICAL COMPUTATION', 'MODELING AND SIMULATION IN PYTHON', 'ALGORITHMS', 'THEORY OF COMPUTATION', 'QUANTUM COMPUTING', 'PROJECTS']                       
         }
     }
@@ -113,8 +117,6 @@ class TestingPage extends Component{
         allTabs[tabNumber] = 'activeCol';
         console.log('allTabs: ' + allTabs);
         //this.state.colStates[tabNumber] = "activeCol";
-        this.state.currentBackground = this.state.backgrounds[tabNumber];
-        this.state.currentPageIndex = (tabNumber * 2);
         this.setState({currentBackground: this.state.backgrounds[tabNumber], currentPageIndex: (tabNumber * 2), currentHeader: this.state.headers[tabNumber]});
         if(this.state.previousColState === null){
             this.setState({previousColState: tabNumber})
@@ -125,6 +127,9 @@ class TestingPage extends Component{
             this.setState({previousColState: tabNumber});
         }
         
+        this.setState({rollDown: true});
+        //this.scrollToBottom();
+
         
         
 
@@ -177,13 +182,34 @@ class TestingPage extends Component{
 
     };
 
+    componentDidMount() {
+        
+        this.scrollToBottom();
+
+    }
+
+    componentDidUpdate(){
+        
+        this.scrollToBottom();
+
+    }
+
+      scrollToBottom = () => {
+        if (this.state.rollDown === true){
+          console.log((window.innerHeight + (this.projectTabs.clientHeight * 5)).toString() + 'px');
+          console.log(this.displayProjects);
+        this.displayProjects.scrollIntoView({ behavior: 'smooth', top: '0' });
+        this.setState({rollDown: false});}
+      
+    }
+
     render(){
         return (
-            <div style={{width: '100%', height: '1100px', backgroundImage: `url(${this.state.currentBackground})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',
+            <div style={{width: '100%', height: (window.innerHeight + (this.projectTabs.clientHeight * 3)).toString() + 'px', backgroundImage: `url(${this.state.currentBackground})`, backgroundRepeat: 'repeat', backgroundSize: 'cover',
   
-  backgroundPosition: 'center',
+  position: 'static'
   }}>
-               
+               <div id='projectTabs' ref={pt => {this.projectTabs = pt}}>
                     <Row style={{position: 'static', width: '100%'}}>
                         <Col className={this.state.colStates[0]}  xs = {12} sm={4} md={4} lg={4} onClick={() => this.setActiveTab(0)} onMouseEnter={() => this.setWiggle(0, 'nonactiveColsHover')} onMouseLeave={() => this.setWiggle(0, 'nonactiveCols')}>
                             <p className="wiggles">ARTIFICIAL INTELLIGENCE</p>
@@ -241,15 +267,18 @@ class TestingPage extends Component{
                         </Col>
                       
                     </Row>
-                    <div style={{backgroundColor: 'black', opacity: '.72'}}>
-                        <h1 className = 'projectsPageHeader'>{this.state.currentHeader}</h1>
-                    </div>
+                </div>
+                <div style={{marginTop: this.projectTabs.clientHeight/4.0}} />
+                            <h1 className = 'projectsPageHeader' ref={dp => { this.displayProjects = dp; }} style={{backgroundColor: 'black', opacity: '.72', marginTop: this.projectTabs.clientHeight/4.0}}>{this.state.currentHeader}</h1>
+                  
                     {!this.state.showDetail ?
                         this.state.currentCloseUp[this.state.currentPageIndex]
                     :
                     this.state.currentCloseUp[this.state.currentPageIndex + 1][this.state.currentCloseUpIndex]
                 }
-                          
+                       
+                       <div style={{marginTop: this.projectTabs.clientHeight * .75}} />
+
             </div>
         )
     }
