@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText, CardMedia} from 'react-mdl';
-
+import {Row, Col} from 'react-bootstrap';
 
 class ArtificialIntelligenceProject2 extends Component{
 
@@ -11,26 +11,26 @@ class ArtificialIntelligenceProject2 extends Component{
 
     render(){
         return(
-            <div className = "projects-grid">
-                    <div className = "separator" />
-                    <Grid>
-                    <Cell col={1} />
-                                <Cell col={10} style={{justifyContent: 'center'}}>
-                                    <Card shadow={5} style={{width: '100%', margin: 'auto', justifyContent: 'center'}} onClick={this.props.changeShowing}>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '20px', justifyContent: 'center'}}></CardTitle> 
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '400px', height: '400px', background: 'url(https://www.8puzzle.com/images/8_puzzle_start_state_a.png) center / cover', backgroundColor: '#4ecdc4', animationName: 'stretch', animationDuration: '1.5s', animationTimingFunction: 'ease-out', animationDelay: '0', animationDirection: 'alternate',animationIterationCount: '1', animationFillMode: 'none', animationPlayState: 'running'}}></CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '20px', justifyContent: 'center'}}></CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '1px', justifyContent: 'center'}}>BABY</CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '1px', justifyContent: 'center'}}></CardTitle>
-                                        <CardText style={{textAlign: 'center'}}>The puzzle solver is a classic and a pretty neat AI demonstration which shows how an agent can solve a "sliding puzzle" like the one below. This project compares several different algorithms including Best First Search and A* with three different heuristics: Manhattan distance, misplaced tiles, and row/column misplacement. I first wrote the solver for the puzzle with 8 pieces and later added a script to solve the larger 15 piece puzzle, where a sample solution is shown on the right.</CardText>
-                                        <CardActions className = 'cardButtons'>
-                                            <Button colored>View on GitHub</Button> 
-                                        </CardActions>
-                                    </Card>
-                                </Cell>
-                                <Cell col={1} />
-                    </ Grid>
-                </div>
+            <div className = "projects-grid" >
+            <div className = "separator" />
+            <Grid style={{animationName: 'stretch', animationDuration: '1.5s', animationTimingFunction: 'ease-out', animationDelay: '0', animationDirection: 'alternate',animationIterationCount: '1', animationFillMode: 'none', animationPlayState: 'running'}}>
+            <Cell col={2} />
+                        <Cell col={8} style={{justifyContent: 'center'}}>
+                            <Card shadow={5} style={{width: '100%', margin: 'auto', justifyContent: 'center'}} onClick={this.props.changeShowing}>
+                                <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', padding: '20px', justifyContent: 'center'}}></CardTitle> 
+                                <CardTitle style={{background: 'url(https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/876278/540440_888913.png) center / cover', color: 'black', margin: 'auto', textAlign: 'center', height: '32vh', width: '30%', animationName: 'stretch', animationDuration: '1.5s', animationTimingFunction: 'ease-out', animationDelay: '0', animationDirection: 'alternate',animationIterationCount: '1', animationFillMode: 'none', animationPlayState: 'running'}}> 
+                                </CardTitle>
+                                <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '1px', justifyContent: 'center'}}>{this.props.tester}</CardTitle>
+                                <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '1px', justifyContent: 'center'}}></CardTitle>
+                                <CardText style={{textAlign: 'center'}}>The puzzle solver is a classic and a pretty neat AI demonstration which shows how an agent can solve a "sliding puzzle" like the one below. This project compares several different algorithms including Best First Search and A* with three different heuristics: Manhattan distance, misplaced tiles, and row/column misplacement. I first wrote the solver for the puzzle with 8 pieces and later added a script to solve the larger 15 piece puzzle, where a sample solution is shown on the right.</CardText>
+                                <CardActions className = 'cardButtons'>
+                                    <Button colored>View on GitHub</Button> 
+                                </CardActions>
+                            </Card>
+                        </Cell>
+                        <Cell col={2} />
+            </ Grid>
+        </div>
         )
     }
 }

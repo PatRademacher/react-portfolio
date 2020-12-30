@@ -8,17 +8,25 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 class App extends Component {
 
+    constructor(props){
+        super(props);
+        this.state={
+            navHeight: '8vh'
+        }
+    }
+
     render() {
+
+        let navHeight = (window.innerHeight * .55).toString() + 'px';
         return (
             <div className="demo-big-content" >
-                <Layout style={{top: '0', height: '900px'}}>
-                    <Header className="header-color" title={<Link style={{color: 'white', height: '900px'}} to="/">My Portfolio</Link>} scroll>
+                <Layout style={{top: '0', height: '100vh'}}>
+                    <Header className="header-color" style={{height: this.state.navHeight, minHeight: '5px'}} title={<Link style={{color: 'white'}} to="/">My Portfolio</Link>} scroll>
                         <Navigation>
                             <Link to="/resume">Resume</Link>
                             <Link to="/aboutme">About Me</Link>
                             <Link to="/projects">Projects</Link>
                             <Link to="/contact">Contact</Link>
-                            <Link to ="/testingpage">Testing Page</Link>
                         </Navigation>
                     </Header>
                     <Drawer title={<Link style={{textDecoration: 'none', color: 'black', }} to="/">My Portfolio</Link>} scroll>
@@ -27,7 +35,6 @@ class App extends Component {
                             <Link to="/aboutme">About Me</Link>
                             <Link to="/projects">Projects</Link>
                             <Link to="/contact">Contact</Link>
-                            <Link to ="/testingpage">Testing Page</Link>
                         </Navigation>
                     </Drawer>
                 

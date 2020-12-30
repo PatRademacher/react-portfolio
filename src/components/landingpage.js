@@ -5,6 +5,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import backgroundVid from './backgroundVideo.mp4';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import headshot from './headshot0.jpg';
+
 class LandingPage extends Component {
     constructor(props){
         super(props);
@@ -31,40 +34,58 @@ class LandingPage extends Component {
         return(
             <div className="landing-grid">
             <video className='videoTag' autoPlay loop muted>
-            <source src={backgroundVid} type='video/mp4' />
+                <source src={backgroundVid} type='video/mp4' />
             </video>
-                <div className="separator"></div>
-                <Container fluid="md" className="containers">
-                    <Row>
+                    <Row style={{alignItems: 'flex-start', display: 'flex'}}>
                         <Col />
                         <Col xs = {6}>
-                            {(this.state.windowWidth === window.innerWidth) && (this.state.windowHeight === window.innerHeight) && (this.state.pictureHeight < 266) && (this.state.pictureWidth < 163) ? <img src={pic} className="avatar-img" alt="avatar" style={{width: this.state.pictureWidth, height: this.state.pictureHeight}} ></img> : <p>SORRY CHARLIE</p> }
+                            <img src = {headshot} style ={{borderRadius: '100%', border: 'solid #ccc 2px', width: '360px'}}></img>
                         </Col>
                         <Col />
                     </Row>
-                    <Row>
+                    <Row style={{height: '57vh', alignItems: 'flex-end', bottom: '0', paddingTop: '2vh', position: 'fixed', width: '100%', display: 'flex'}}>
                         
                             <Col />
-                            <Col className="banner-text" xs={8} style={{height: this.state.pictureHeight}}>
+                            <Col className="banner-text" xs={12} sm={10} md={8} lg={8} xl={8}>
                                 
-                                    <h1>PATRICK RADEMACHER: 
+                                    <h1>Patrick Rademacher: 
                                         <br></br>
-                                        Full Stack Web Developer
                                     </h1>  
-                                    <hr />
-                                    <p>HTML/CSS | Bootstrap | Javascript | React | React Native | NodeJS | Express | MongoDB</p>
-                                    <div className="social-links">
+                                    <h2>
+                                        Master of Science in Computer Science
+                                    </h2>
+                                    <div style={{alignContent: 'space-between'}}>
+                                        <hr />
+                                        <Row>
+                                            
+                                            <Col xs={6} style={{textAlign: 'center'}}>
+                                                <p>Python | C | C++ | Javascript | Java | Haskell | SQL</p>
+                                            </Col>
+                                            <Col xs={6} style={{textAlign: 'center'}}>
+                                                <p>HTML/CSS | React | Bootstrap | RestFUL API | Node.js</p>
+                                            </Col>
+                                        
+                                        </Row>
+                                        <hr />
+                                        </div>
 
                                 {/*Github */}
-                                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                                    <i className="fab fa-github-square"></i>
-                                </a>
-                                {/*Linked In */}
-                                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                                    <i className="fab fa-linkedin-square"  aria-hidden="true" />
-                                </a>
+                                <div className='social-links'>
+                                    
+                                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                            <i className="fab fa-github"></i>
+                                        </a>
+                                        {/*Linked In */}
+                                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                            <i className="fab fa-linkedin"></i>
+                                        </a>
 
-                            </div>
+                                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                            <i className="fab fa-amazon"></i>
+                                        </a>
+                               
+                                </div>
+                                <div style={{height: '3px'}} />
                             </Col>
                             <Col />
                             
@@ -72,7 +93,6 @@ class LandingPage extends Component {
 
                     </Row>
                     
-                </Container>
                         
                         
                         
