@@ -36,6 +36,14 @@
   padding-top: 7em;
 }
 
+.separatorTwo{
+  padding-top: 3em;
+}
+
+.separatorThree{
+  padding-top: 1em;
+}
+
 .banner-text{
   background-color: black;
   opacity: .8;
@@ -172,18 +180,22 @@
 /* Resume Page css */
 
 .resume-center {
-  background: #556270;
   color: white;
   padding: 1px;
-  border: solid salmon 4px;
   z-index: 0;
   bottom: 0;
-  position: static;
+  position: relative;
   height: 851px;
+  
+
 }
 
 .resume-border{
   border: solid salmon 4px;
+}
+
+#resumeButton{
+  color: 'white';
 }
 
 .containers{
@@ -200,8 +212,9 @@
 
 
 
-.projectTabs{
-  text-decoration: none;
+#projectTabs{
+  width: 100%;
+  padding: 0px 0px;
   
 }
 
@@ -214,16 +227,17 @@
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: -1;
 }
 
 .videoTagResume{
   object-fit: cover;
   width: 100vw;
   height: 100vh;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
+  position: fixed;
 }
 
 .tabz:focus{

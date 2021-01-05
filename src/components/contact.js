@@ -43,7 +43,7 @@ class Contact extends React.Component {
     return(
       <div style={{backgroundImage: `url(${beluga})`, backgroundSize: 'cover', backgroundPosition: 'center center', display: 'flex', justifyContent:'center', height:'1122px', repeat: 'no-repeat', alignItems: 'center'}}>
     <Row style={{width: '59%', padding: '8px'}}>
-      <Col className='contact-grid'  sm={4} style={{padding: '3px', opacity: '.4'}} >
+      <Col className='contact-grid' xs={6} sm={5} md={4} lg={4} xl={4} style={{padding: '3px', opacity: '.4'}} >
       <h3 icon='user' style={{borderBottom: 'dotted black 6px', fontFamily: "'Fredoka One'", fontSize: '1.77vw', textAlign: 'center'}}>Patrick Rademacher</h3>
       
       <List>
@@ -76,7 +76,7 @@ class Contact extends React.Component {
                                 </ListItem>
                             </List>
                             </Col>
-      <Col className='contact-grid' sm={8} style={{opacity: '.73'}}>
+      <Col className='contact-grid' xs={6} sm={7} md={8} lg={8} xl={8} style={{opacity: '.73'}}>
     <MDBContainer>
         <form onSubmit={this.handleSubmit.bind(this)} method="POST">
         <p>Contact Me: Use My Form</p>

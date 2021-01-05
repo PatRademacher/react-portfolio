@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText, CardMedia} from 'react-mdl';
 
 
-class MachineLearningProject2 extends Component{
+class ModelingAndSimulationInPythonProject0 extends Component{
 
     constructor(props){
         super(props);
@@ -18,11 +18,11 @@ class MachineLearningProject2 extends Component{
                                 <Cell col={6} style={{justifyContent: 'center'}}>
                                     <Card shadow={5} style={{width: '100%', margin: 'auto', justifyContent: 'center', backgroundColor: '#eee'}} onClick={this.props.changeShowing}>
                                         <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', padding: '20px', justifyContent: 'center'}}></CardTitle> 
-                                        <CardTitle style={{background: 'url(https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/d5/5a/3a/d55a3a88-fb32-88c5-cba6-24120d5b8cdf/source/256x256bb.jpg) center', borderRadius: '100%', backgroundRepeat: 'no-repeat', height: '32vh', width: '100%', color: 'black', margin: 'auto', textAlign: 'center', animationName: 'stretch', animationDuration: '1.5s', animationTimingFunction: 'ease-out', animationDelay: '0', animationDirection: 'alternate',animationIterationCount: '1', animationFillMode: 'none', animationPlayState: 'running'}}> 
+                                        <CardTitle style={{background: 'url(https://www.researchgate.net/profile/Tijana_Ivancevic/publication/1743757/figure/fig7/AS:279360897601538@1443616236130/Benard-cells-showing-a-typical-vortex-of-a-rolling-air-with-a-warm-air-rising-in-a-ring_Q320.jpg) center', backgroundRepeat: 'no-repeat', height: '32vh', width: '100%', color: 'black', margin: 'auto', textAlign: 'center', animationName: 'stretch', animationDuration: '1.5s', animationTimingFunction: 'ease-out', animationDelay: '0', animationDirection: 'alternate',animationIterationCount: '1', animationFillMode: 'none', animationPlayState: 'running'}}> 
                                         
                                         </CardTitle>
                                         <div className ='separatorThree' />
-                                        <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid #0cf2ad 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.82em', fontFamily: "'Fredoka One'", position: 'relative', padding: '2px'}}>NBA LONGEVITY PREDICTOR</p>                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '1px', justifyContent: 'center'}}></CardTitle>
+                                        <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid #0cf2ad 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.82em', fontFamily: "'Fredoka One'", position: 'relative', padding: '2px'}}>LORENZ MUSIC GENERATOR</p>                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '1px', justifyContent: 'center'}}></CardTitle>
                                         <div className ='separatorThree' />
                                         <p style={{textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>The puzzle solver is a classic and a pretty neat AI demonstration which shows how an agent can solve a "sliding puzzle" like the one below. This project compares several different algorithms including Best First Search and A* with three different heuristics: Manhattan distance, misplaced tiles, and row/column misplacement. I first wrote the solver for the puzzle with 8 pieces and later added a script to solve the larger 15 piece puzzle, where a sample solution is shown on the right.</p>
                                         <CardActions className = 'cardButtons'>
@@ -37,4 +37,4 @@ class MachineLearningProject2 extends Component{
     }
 }
 
-export default MachineLearningProject2;
+export default ModelingAndSimulationInPythonProject0;

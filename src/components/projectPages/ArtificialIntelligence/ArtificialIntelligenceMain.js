@@ -27,7 +27,7 @@ class ArtificialIntelligenceMain extends Component{
                     <div className = "separator" />
                     <Row>
                                 <Col xs={12} sm={12} md={12} lg={4} xl={4} >
-                                    <Card shadow={5} style={{margin: 'auto', justifyContent: 'center', backgroundColor: '#ccc', opacity: '.8', height: '49vh', width: '294px'}} onClick={() => this.props.changeShowing(0)}>
+                                    <Card shadow={5} style={{margin: 'auto', justifyContent: 'center', backgroundColor: 'white', opacity: '.8', height: '59vh', width: '324px', border: 'solid black 3px'}} onClick={() => this.props.changeShowing(0)}>
                                         <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', justifyContent: 'center'}}></CardTitle> 
                                         <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center'}}>
                                             <div style={{justifyContent: 'center', margin: 'auto', width: '100%'}}>
@@ -48,14 +48,17 @@ class ArtificialIntelligenceMain extends Component{
                                                 </Row>
                                             </div>   
                                         </CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', padding: '3vh', justifyContent: 'center'}}></CardTitle>
+                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center'}}>
+                                              
+                                        </CardTitle>
+                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', padding: '8.2vh', justifyContent: 'center'}}></CardTitle>
                                         
-                                        <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid white 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.32em', fontFamily: "'Fredoka One'", position: 'relative'}}>8 Puzzle Solver</p>
+                                        <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid #0cf2ad 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.32em', fontFamily: "'Fredoka One'", position: 'relative', alignSelf: 'flex-end'}}>8 PUZZLE SOLVER</p>
                                     </Card>
                                     <div className='separator' />
                                 </Col>
                                 <Col xs={12} sm={12} md={12} lg={4} xl={4} >
-                                <Card shadow={5} style={{margin: 'auto', justifyContent: 'center', backgroundColor: '#ccc', opacity: '.8', height: '49vh', width: '294px'}} onClick={() => this.props.changeShowing(1)}>
+                                <Card shadow={5} style={{margin: 'auto', justifyContent: 'center', backgroundColor: 'white', opacity: '.8', height: '59vh', width: '324px', border: 'solid black 3px'}} onClick={() => this.props.changeShowing(1)}>
                                         <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', justifyContent: 'center'}}></CardTitle> 
                                         <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center'}}>
                                             <div style={{display: 'block', justifyContent: 'center', margin: 'auto', width: '100%', textAlign: 'center'}}>
@@ -141,22 +144,26 @@ class ArtificialIntelligenceMain extends Component{
                                                 </Row>
                                             </div>   
                                         </CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', padding: '0vh', justifyContent: 'center'}}></CardTitle>
+                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center'}}>
+                                              
+                                        </CardTitle>
+                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', padding: '4.7vh', justifyContent: 'center'}}></CardTitle>
                                         
-                                        <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid white 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.32em', fontFamily: "'Fredoka One'", position: 'relative'}}>8 Queens Solver</p>
+                                        <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid #0cf2ad 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.32em', fontFamily: "'Fredoka One'", position: 'relative', alignSelf: 'flex-end'}}>8 QUEENS SOLVER</p>
                                     </Card>
                                     <div className='separator' />
                                 </Col>
                                 <Col xs={12} sm={12} md={12} lg={4} xl={4}>
-                                <Card shadow={5} style={{margin: 'auto', justifyContent: 'center', backgroundColor: 'white', opacity: '.8', height: '49vh', width: '294px', background: 'url(https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/876278/540440_888913.png) center / cover'}} onClick={() => this.props.changeShowing(2)}>
-                                <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', justifyContent: 'center'}}></CardTitle> 
+                                <Card shadow={5} style={{margin: 'auto', justifyContent: 'center', backgroundColor: 'white', opacity: '.8', height: '59vh', width: '324px', border: 'solid black 3px'}} onClick={() => this.props.changeShowing(2)}>
+                                <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', justifyContent: 'center'}}> </CardTitle>
+                                <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', justifyContent: 'center', width: '324px', height: '100%', background: 'url(https://img.pngio.com/headphones-icon-headphones-png-256_256.png) center', backgroundRepeat: 'no-repeat'}}></CardTitle> 
                                         <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center'}}>
                                               
                                         </CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', padding: '17.3vh', justifyContent: 'center'}}></CardTitle>
+                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', padding: '1.3vh', justifyContent: 'center'}}></CardTitle>
                                         
-                                        <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid white 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.32em', fontFamily: "'Fredoka One'", position: 'relative'}}>8 Puzzle Solver</p>
-                                    </Card> 
+                                        <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid #0cf2ad 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.32em', fontFamily: "'Fredoka One'", position: 'relative'}}>EUPHONOMIMESIS</p>
+                                    </Card>
                                 </Col>
                                 <div className='separator' />
 

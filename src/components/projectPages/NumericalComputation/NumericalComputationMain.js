@@ -1,14 +1,6 @@
 import React, {Component} from 'react';
 import { Grid, Cell, Card, CardTitle, CardActions, Button, CardMenu, IconButton, CardText, CardMedia} from 'react-mdl';
-import Paper from '@material-ui/core/Paper';
-//import { Tabs } from '@material-ui/core';
-//import Tab from '@material-ui/core/Tab';
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import Typography from "@material-ui/core/Typography";
-
+import {Row, Col} from 'react-bootstrap';
 class NumericalComputationMain extends Component{
 
     constructor(props){
@@ -24,36 +16,46 @@ class NumericalComputationMain extends Component{
         return(
             <div className = "projects-grid">
                     <div className = "separator" />
-                    <Grid>
-                                <Cell col={4}>
-                                    <Card shadow={5} style={{minWidth: '450', margin: 'auto', justifyContent: 'center', backgroundColor: '#4ecdc4'}} onClick={() => this.props.changeShowing(0)}>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '20px', justifyContent: 'center'}}></CardTitle> 
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', height: '276px', background: 'url(https://www.8puzzle.com/images/8_puzzle_start_state_a.png) center / cover', backgroundColor: '#4ecdc4'}}></CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '20px', justifyContent: 'center'}}></CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '1px', justifyContent: 'center'}}>newton</CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '1px', justifyContent: 'center'}}></CardTitle>
+                    <Row>
+                                <Col xs={12} sm={12} md={12} lg={4} xl={4} >
+                                <Card shadow={5} style={{margin: 'auto', justifyContent: 'center', backgroundColor: 'white', opacity: '.8', height: '49vh', width: '324px', background: 'url(https://www.researchgate.net/profile/Yuling_Jiao2/publication/330617733/figure/fig1/AS:718798407602176@1548386303228/Real-samples-and-generated-samples-obtained-by-VGrow-KL-on-MNIST_Q320.jpg) center / cover'}} onClick={() => this.props.changeShowing(0)}>
+                                <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', justifyContent: 'center'}}></CardTitle> 
+                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center'}}>
+                                              
+                                        </CardTitle>
+                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', padding: '17.3vh', justifyContent: 'center'}}></CardTitle>
+                                        
+                                        <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid white 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.32em', fontFamily: "'Fredoka One'", position: 'relative'}}>MNIST</p>
+                                    </Card>
+                                    <div className='separator' />
+                                </Col>
+                                <Col xs={12} sm={12} md={12} lg={4} xl={4} >
+                                <Card shadow={5} style={{margin: 'auto', justifyContent: 'center', backgroundColor: 'white', opacity: '.8', height: '49vh', width: '324px', 
+                                background: 'url(https://www.researchgate.net/profile/Lubna_Emad/publication/331991626/figure/fig3/AS:740691793678336@1553606093170/The-initialization-stage_Q320.jpg) center / cover'}} onClick={() => this.props.changeShowing(1)}>
+                                <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', justifyContent: 'center'}}></CardTitle> 
+                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center'}}>
+                                              
+                                        </CardTitle>
+                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', padding: '17.3vh', justifyContent: 'center'}}></CardTitle>
+                                        
+                                        <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid white 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.32em', fontFamily: "'Fredoka One'", position: 'relative'}}>K Means and Fuzzy C Means</p>
+                                    </Card>
+                                    <div className='separator' />
+                                </Col>
+                                <Col xs={12} sm={12} md={12} lg={4} xl={4}>
+                                <Card shadow={5} style={{margin: 'auto', justifyContent: 'center', backgroundColor: 'white', opacity: '.8', height: '49vh', width: '324px', background: 'url(https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/d5/5a/3a/d55a3a88-fb32-88c5-cba6-24120d5b8cdf/source/256x256bb.jpg) center / cover'}} onClick={() => this.props.changeShowing(2)}>
+                                <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', justifyContent: 'center'}}></CardTitle> 
+                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center'}}>
+                                              
+                                        </CardTitle>
+                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', padding: '17.3vh', justifyContent: 'center'}}></CardTitle>
+                                        
+                                        <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid white 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.32em', fontFamily: "'Fredoka One'", position: 'relative'}}>NBA Draft Longevity Predictor</p>
                                     </Card> 
-                                </Cell>
-                                <div className = "separator" />
-                                <Cell col={4}>
-                                    <Card shadow={5} style={{minWidth: '450', margin: 'auto', justifyContent: 'center'}} onClick={() => this.props.changeShowing(1)}>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '20px', justifyContent: 'center'}}></CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', height: '276px', background: 'url(https://lh3.googleusercontent.com/proxy/B-z3Yav4LMQqQq1PiDPfxx5s8IGjmeV5KKyU_spHlI8YtdgYgsdDYDDnvnX1h-q0kQNr1mtAGlv9ydsCaEy1uasNdQo54P765FwpmgEUmhOiILMr7Q) center / cover'}}></CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '20px', justifyContent: 'center'}}></CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '1px', justifyContent: 'center'}}>B Spline</CardTitle>
-                                    </Card>
-                                </Cell>
-                                <div className = "separator" />
-                                <Cell col={4}>
-                                    <Card shadow={5} style={{minWidth: '450', margin: 'auto', justifyContent: 'center'}} onClick={() => this.props.changeShowing(2)}>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '20px', justifyContent: 'center'}}></CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', height: '276px', background: 'url(https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/876278/540440_888913.png) center / cover'}}></CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '20px', justifyContent: 'center'}}></CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '1px', justifyContent: 'center'}}>Cubic</CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '1px', justifyContent: 'center'}}></CardTitle>
-                                    </Card>
-                                </Cell>
-                    </ Grid>
+                                </Col>
+                                <div className='separator' />
+
+                    </ Row>
                 </div>
         )
     }

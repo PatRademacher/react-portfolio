@@ -36,10 +36,11 @@ class LandingPage extends Component {
             <video className='videoTag' autoPlay loop muted>
                 <source src={backgroundVid} type='video/mp4' />
             </video>
-                    <Row style={{alignItems: 'flex-start', display: 'flex'}}>
+                <Row style={{height: '2.8vh'}} />
+                    <Row style={{alignItems: 'flex-start', display: 'flex', justifyContent: 'center'}}>
                         <Col />
-                        <Col xs = {6}>
-                            <img src = {headshot} style ={{borderRadius: '100%', border: 'solid #ccc 2px', width: '360px'}}></img>
+                        <Col xs = {6} style = {{justifyContent: 'center'}}>
+                            <img src = {headshot} style ={{borderRadius: '100%', border: 'solid #ccc 2px', width: '290px', margin: 'auto', position: 'sticky'}}></img>
                         </Col>
                         <Col />
                     </Row>

@@ -17,6 +17,7 @@ import pic14 from "./quantumMedium.jpg";
 import pic9 from "./opensourceMedium.jpg";
 import pic10 from "./numcompMedium.jpg";
 import pic11 from "./modelingMedium.jpg";
+import mainpic from "./mainPicture.jpg";
 
 import ArtificalIntelligenceMain from "./projectPages/ArtificialIntelligence/ArtificialIntelligenceMain";
 import ArtificialIntelligenceProject0 from "./projectPages/ArtificialIntelligence/ArtificialIntelligenceProject0";
@@ -47,6 +48,9 @@ import NumericalComputationMain from "./projectPages/NumericalComputation/Numeri
 import NumericalComputationProject0 from "./projectPages/NumericalComputation/NumericalComputationProject0";
 import NumericalComputationProject1 from "./projectPages/NumericalComputation/NumericalComputationProject1";
 import NumericalComputationProject2 from "./projectPages/NumericalComputation/NumericalComputationProject2";
+import ModelingAndSimulationInPythonMain from "./projectPages/ModelingAndSimulationInPython/ModelingAndSimulationInPythonMain";
+import ModelingAndSimulationInPythonProject0 from "./projectPages/ModelingAndSimulationInPython/ModelingAndSimulationInPythonProject0";
+import ProjectPageMain from "./projectPages/ProjectPage/ProjectPageMain";
 import {Navigation} from 'react-mdl';
 
 
@@ -61,7 +65,7 @@ class TestingPage extends Component{
             colStates: ["nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols", "nonactiveCols"],
             backgrounds: [pic0, pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, pic14],
             previousColState: null,
-            currentBackground: pic0,
+            currentBackground: mainpic,
             showDetail: false,
             tester: '3',
             wiggler: Array(15).fill('20px'),
@@ -99,12 +103,16 @@ class TestingPage extends Component{
                                     [<NumericalComputationProject0 tester="3" showingDetail = "true" changeShowing={() => this.showDetails(null)}/>,
                                     <NumericalComputationProject1 tester="5" showingDetail = "true" changeShowing={() => this.showDetails(null)}/>,
                                     <NumericalComputationProject2 tester="5" showingDetail = "true" changeShowing={() => this.showDetails(null)}/>
-                                    ],        
+                                    ],
+                                <ModelingAndSimulationInPythonMain tester = "null" showingDetail="false" changeShowing={(n) => this.showDetails(n)}/>, 
+                                    [<ModelingAndSimulationInPythonProject0 tester="5" showingDetail = "true" changeShowing={() => this.showDetails(null)}/>
+                                    ], 
+                                <ProjectPageMain tester = "null" showingDetail="false" changeShowing={(n) => this.showDetails(n)}/>, []   
                                 ],
                                    
             currentCloseUpIndex: -1,
             currentHover: -1,
-            currentPageIndex: -1,
+            currentPageIndex: 24,
             currentHeader: 'PROJECTS',
             rollDown: false,
             headers: ['ARTIFICIAL INTELLIGENCE', 'MACHINE LEARNING', 'DATABASES', 'INTERNETWORKING PROTOCOLS', 'MUSIC AND DIGITAL SIGNAL PROCESSING', 'SOFTWARE ENGINEERING', 'FUNCTIONAL PROGRAMMING', 'FRONT-END WEB DEVELOPMENT', 'FRACTALS', 'OPEN SOURCE', 'NUMERICAL COMPUTATION', 'MODELING AND SIMULATION IN PYTHON', 'ALGORITHMS', 'THEORY OF COMPUTATION', 'QUANTUM COMPUTING', 'PROJECTS']                       
@@ -127,7 +135,7 @@ class TestingPage extends Component{
             this.setState({previousColState: tabNumber});
         }
         
-        this.setState({rollDown: true});
+        this.setState({rollDown: true, showDetail: false});
         //this.scrollToBottom();
 
         
@@ -142,6 +150,7 @@ class TestingPage extends Component{
         console.log('showdetail: ' + this.state.showDetail);
         console.log('currentCloseUpIndex: ' + this.state.currentCloseUpIndex);
         console.log('tester: ' + this.state.tester);
+        
     }
 
     settingIndex = (num) => {
@@ -205,10 +214,7 @@ class TestingPage extends Component{
 
     render(){
         return (
-            <div style={{width: '100%', height: (window.innerHeight + (this.projectTabs.clientHeight * 3)).toString() + 'px', backgroundImage: `url(${this.state.currentBackground})`, backgroundRepeat: 'repeat', backgroundSize: 'cover',
-  
-  position: 'static'
-  }}>
+            <div style={{width: '100%', height: '200vh', backgroundImage: `url(${this.state.currentBackground})`, backgroundRepeat: 'repeat', backgroundSize: 'cover', position: 'static', backgroundColor: 'plum'}}>
                <div id='projectTabs' ref={pt => {this.projectTabs = pt}}>
                     <Row style={{position: 'static', width: '100%'}}>
                         <Col className={this.state.colStates[0]}  xs = {12} sm={4} md={4} lg={4} onClick={() => this.setActiveTab(0)} onMouseEnter={() => this.setWiggle(0, 'nonactiveColsHover')} onMouseLeave={() => this.setWiggle(0, 'nonactiveCols')}>
