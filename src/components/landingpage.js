@@ -73,17 +73,15 @@ class LandingPage extends Component {
                                 {/*Github */}
                                 <div className='social-links'>
                                     
-                                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.github.com/patrademacher" target="_blank" rel="noopener noreferrer">
                                             <i className="fab fa-github"></i>
                                         </a>
                                         {/*Linked In */}
-                                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.linkedin.com/in/patrick-rademacher-1844221b8/" target="_blank" rel="noopener noreferrer">
                                             <i className="fab fa-linkedin"></i>
                                         </a>
 
-                                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                                            <i className="fab fa-amazon"></i>
-                                        </a>
+                                        
                                
                                 </div>
                                 <div style={{height: '3px'}} />

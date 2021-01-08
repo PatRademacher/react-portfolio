@@ -51,7 +51,7 @@ class ArtificialIntelligenceMain extends Component{
                                         <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center'}}>
                                               
                                         </CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', padding: '8.2vh', justifyContent: 'center'}}></CardTitle>
+                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center',  justifyContent: 'center'}}></CardTitle>
                                         
                                         <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid #0cf2ad 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.32em', fontFamily: "'Fredoka One'", position: 'relative', alignSelf: 'flex-end'}}>8 PUZZLE SOLVER</p>
                                     </Card>
@@ -147,7 +147,7 @@ class ArtificialIntelligenceMain extends Component{
                                         <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center'}}>
                                               
                                         </CardTitle>
-                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', padding: '4.7vh', justifyContent: 'center'}}></CardTitle>
+                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center',  justifyContent: 'center'}}></CardTitle>
                                         
                                         <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid #0cf2ad 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.32em', fontFamily: "'Fredoka One'", position: 'relative', alignSelf: 'flex-end'}}>8 QUEENS SOLVER</p>
                                     </Card>

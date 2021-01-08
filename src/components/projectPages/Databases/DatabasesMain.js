@@ -21,7 +21,7 @@ class DatabasesMain extends Component{
                                 <Col xs={12} sm={12} md={12} lg={12} xl={12} >
                                 <Card shadow={5} style={{margin: 'auto', justifyContent: 'center', backgroundColor: 'white', opacity: '.8', height: '59vh', width: '324px', border: 'solid black 3px'}} onClick={() => this.props.changeShowing(0)}>
                                 <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', justifyContent: 'center'}}> </CardTitle>
-                                <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', justifyContent: 'center', backgroundRepeat: 'no-repeat', width: '324px', height: '100%', background: 'url(https://free-icon-rainbow.com/i/icon_05411/icon_054110_256.jpg) center'}}></CardTitle> 
+                                <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', justifyContent: 'center', width: '324px', height: '100%', background: 'url(https://free-icon-rainbow.com/i/icon_05411/icon_054110_256.jpg) center', backgroundRepeat: 'no-repeat'}}></CardTitle> 
                                         <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center'}}>
                                               
                                         </CardTitle>

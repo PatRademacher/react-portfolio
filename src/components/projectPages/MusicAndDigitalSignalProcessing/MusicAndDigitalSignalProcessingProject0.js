@@ -24,9 +24,11 @@ class MusicAndDigitalSignalProcessingProject0 extends Component{
                                         <div className ='separatorThree' />
                                         <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid #0cf2ad 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.82em', fontFamily: "'Fredoka One'", position: 'relative', padding: '2px'}}>PEDAL PI</p>                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '1px', justifyContent: 'center'}}></CardTitle>
                                         <div className ='separatorThree' />
-                                        <p style={{textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>The puzzle solver is a classic and a pretty neat AI demonstration which shows how an agent can solve a "sliding puzzle" like the one below. This project compares several different algorithms including Best First Search and A* with three different heuristics: Manhattan distance, misplaced tiles, and row/column misplacement. I first wrote the solver for the puzzle with 8 pieces and later added a script to solve the larger 15 piece puzzle, where a sample solution is shown on the right.</p>
+                                        <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>For the accelerated postbac program necessary to be admitted to grad school, all students had to make a project on anything as long as approved by the professor. Having a deep, strong passion for guitar and audio effects, I built and then programmed my own guitar effects pedal using a Raspberry Pi Zero. I ended up making it a multi-effects pedal with delay, a phaser, a flanger, and pitch shifter by attempting to digitally mimic how these effects work from an analog standpoint.  </p>
                                         <CardActions className = 'cardButtons'>
-                                            <Button style={{fontSize: '1.45em'}} colored>View on GitHub</Button> 
+                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
+                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Queens' target='_blank'>View on GitHub</a>
+                                            </Button> 
                                         </CardActions>
                                     </Card>
                                 </Cell>

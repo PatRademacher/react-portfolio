@@ -23,10 +23,13 @@ class MachineLearningProject0 extends Component{
                                         </CardTitle>
                                         <div className ='separatorThree' />
                                         <p style={{color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid #0cf2ad 2px', width: '100%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '1.82em', fontFamily: "'Fredoka One'", position: 'relative', padding: '2px'}}>MNIST</p>                                        <CardTitle style={{color: 'black', margin: 'auto', textAlign: 'center', width: '276px', padding: '1px', justifyContent: 'center'}}></CardTitle>
-                                        <div className ='separatorThree' />
-                                        <p style={{textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>The puzzle solver is a classic and a pretty neat AI demonstration which shows how an agent can solve a "sliding puzzle" like the one below. This project compares several different algorithms including Best First Search and A* with three different heuristics: Manhattan distance, misplaced tiles, and row/column misplacement. I first wrote the solver for the puzzle with 8 pieces and later added a script to solve the larger 15 piece puzzle, where a sample solution is shown on the right.</p>
+                                        <div className ='separatorTwo' />
+                                        <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>A classic project in the ML world, MNIST uses a data training set comprised of images of handwritten digits so the program 'learns' how to distinguish and select their correct values using a neural network. From there, its overall accuracy is then measured by its selections of values from the test set data of handwritten digit images, which are not revealed to the program until it's done training.</p>
                                         <CardActions className = 'cardButtons'>
-                                            <Button style={{fontSize: '1.45em'}} colored>View on GitHub</Button> 
+                                            
+                                        <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
+                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Puzzle' target='_blank'>View on GitHub</a>
+                                        </Button>
                                         </CardActions>
                                     </Card>
                                 </Cell>

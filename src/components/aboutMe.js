@@ -14,24 +14,47 @@ function AboutMe() {
 
   
 
-  const renderContent = () => (
+  const renderContent0 = () => (
     <>
   
       <div className="Parallax__content__heading">
-        <h1 className="Parallax__content__heading__text">Closure</h1>
+        <h1 className="Parallax__content__heading__text">About Me</h1>
+        
+      </div>
+      <div className="Parallax__content__cta">
+        <p style={{fontSize: '1.53rem', lineHeight: '100%'}}>
+          Hello, my name is Patrick Rademacher, and welcome to my online portfolio! Recently, I graduated with a master's in computer science from Portland State University. I'm mainly interested in data science, machine learning, artificial intelligence, digital signal processing, front-end web development, and software engineering. I aim to find a position rooted within one of these domains (or something similar) through a company or workplace that values a strong work ethic, clear and open communication, and an open-minded approach to asking questions and working with others to solve problems. 
+        </p>
+      </div>
+    </>
+  );
+
+  const renderContent1 = () => (
+    <>
+  
+      <div className="Parallax__content__heading">
+        <h1 className="Parallax__content__heading__text">A Background in Teaching</h1>
+      </div>
+      <div className="Parallax__content__cta">
+        <p style={{fontSize: '1.53rem', lineHeight: '100%'}}>
+          I completed my bachelor's degree in English at Michigan State University back in 2013 with a focus in secondary education. The following year I completed a year-long internship teaching freshman and sophomore level English at Lowell High School in Michigan. I now hold teaching certificates for secondary English Language Arts in both Michigan and Oregon. Although I ended up pursuing a different path than intended, my background as an educator has provided me with skillsets that still come in handy even within the CS world, such as: thorough and organized planning; strong and engaging presentations skills; an ability to be quick and adapt when things don't go as planned; and, perhaps most obviously yet most importantly, teaching and explaining concepts to students with various learning styles and who come from different backgrounds too. 
+        </p>
+      </div>
+    </>
+  );
+
+  const renderContent2 = () => (
+    <>
+  
+      <div className="Parallax__content__heading">
+        <h1 className="Parallax__content__heading__text">My Side Gig</h1>
         <h2 className="Parallax__content__heading__caption">
           Your one-stop source of Web Development tricks
         </h2>
       </div>
       <div className="Parallax__content__cta">
-        <p>
-          <b>1. Like the video.</b> Because it helps me and my channel
-        </p>
-        <p>
-          <b>2. Like the video.</b> To see more content like that!
-        </p>
-        <p>
-          <b>3. Follow the Github link.</b> And play with this code yourself!
+        <p style={{fontSize: '1.53rem', lineHeight: '100%'}}>
+          In addition to programming and teaching, I also have a love and passion for music and playing guitar that is just strong and important to me. After my internship, I pursued my dream of playing in a band with all seriousness, which I knew could not coexist with the profession of a teacher, which has taken me to where I am today. Although it's not in front of an audience anymore with the band days long over, I am still an avid player and find great joy and meaning in creating music. 
         </p>
       </div>
     </>
@@ -51,7 +74,7 @@ function AboutMe() {
         
       />
       
-      <div className="Parallax__content">{renderContent()}</div>
+      <div className="Parallax__content">{renderContent0()}</div>
       </section>
       </Cell>
       </Grid>
@@ -68,7 +91,7 @@ function AboutMe() {
         <img className="Parallax__background-michiganstateSpartyRun" src={sparty} style={{width: '10%'}} />
       </div>
       
-      <div className="Parallax__content">{renderContent()}</div>
+      <div className="Parallax__content">{renderContent1()}</div>
       </section>
       </Cell>
       </Grid>
@@ -83,7 +106,7 @@ function AboutMe() {
         className="Parallax__background-guitar-notes"
         style={{ transform: `translateY(${offsetY * 0.8}px)`, filter: 'invert(87%) sepia(92%) saturate(987%) hue-rotate(81deg) brightness(97%) contrast(95%)' }}
       />
-      <div className="Parallax__content">{renderContent()}</div>
+      <div className="Parallax__content">{renderContent2()}</div>
       </section>
       </div>  
     

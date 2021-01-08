@@ -274,7 +274,7 @@ class TestingPage extends Component{
                       
                     </Row>
                 </div>
-                <div style={{marginTop: this.projectTabs.clientHeight/4.0}} />
+                <div style={{marginTop: this.projectTabs.clientHeight/8.0}} />
                             <h1 className = 'projectsPageHeader' ref={dp => { this.displayProjects = dp; }} style={{backgroundColor: 'black', opacity: '.72', marginTop: this.projectTabs.clientHeight/4.0}}>{this.state.currentHeader}</h1>
                   
                     {!this.state.showDetail ?

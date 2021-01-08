@@ -25,7 +25,7 @@ class ProjectPageMain extends Component{
         return(
             <div className = "projects-grid">
                     <div className = "separator" />
-                    <p style={{lineHeight: '100%', color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid #0cf2ad 2px', width: '50%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '2.82em', fontFamily: "'Fredoka One'", position: 'relative', padding: '2px'}}>Here you can view all of my projects I did throughout my master's. Click above to view them by their respective course.</p>
+                    <p style={{lineHeight: '100%', color:  '#556270', backgroundColor: '#ee8d8d', border: 'solid #0cf2ad 2px', width: '85%', opacity: '1.0 !important', margin: 'auto', textAlign: 'center', justifyContent: 'center', fontSize: '2.12em', fontFamily: "'Fredoka One'", position: 'relative', padding: '2px'}}>Here you can view all of my projects I did throughout my master's. Click above to view them by their respective course.</p>
             </div>
         )
     }
