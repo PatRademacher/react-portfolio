@@ -25,8 +25,8 @@ class ArtificialIntelligenceProject2 extends Component{
                                         <div className ='separatorTwo' />
                                         <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>This project uses a library of audio clips in their original form from the time domain as well as their respective form in frequency domain, derived from applying a Fast Fourier Transform. Initialized by randomly selecting a single audio clip from the library and setting it as the ‘goal’, the program then aims to recreate the goal by combining the remaining library samples using genetic algorithm. The project’s name stems from euphonic (“pleasant sounding”) and mimesis (“imitation of the real”). Created with two other students, our interest and drive for creating this project resulted from our dual interest in AI/ML algorithms and DSP techniques for audio. </p>
                                         <CardActions className = 'cardButtons'>
-                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
-                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Puzzle' target='_blank'>View on GitHub</a>
+                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px', border: 'solid #0cf2ad 2px'}} colored>
+                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/charboltron/euphonomimesis' target='_blank'>View on GitHub</a>
                                             </Button> 
                                         </CardActions>
                                     </Card>

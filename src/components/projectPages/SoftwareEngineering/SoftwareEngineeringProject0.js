@@ -25,7 +25,7 @@ class SoftwareEngineeringProject0 extends Component{
                                         <div className ='separatorThree' />
                                         <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>Every year, MIT hosts a competition called Battlecode where programmers are given the autonomy to code their own strategies and tactics (but within a confined framework) in hope to beat opponents in this intricate, team-versus-team game. Our project was to enter the competition and lasted throughout majority of the term where progress and updates stemmed from an AGILE approach of a software engineer.</p>
                                         <CardActions className = 'cardButtons'>
-                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
+                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px', border: 'solid #0cf2ad 2px'}} colored>
                                                 <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Queens' target='_blank'>View on GitHub</a>
                                             </Button> 
                                         </CardActions>

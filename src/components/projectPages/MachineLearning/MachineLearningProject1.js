@@ -26,8 +26,8 @@ class MachineLearningProject1 extends Component{
                                         <div className ='separatorThree' />
                                         <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>Another well-known pair of algorithms in ML known as K-means and Fuzzy C-means, their purpose and use come in handy when needing to classify data when no labels or known relationships are given. For this project, the data comes from a set of points in gaussian distribution and is then categorized into clusters of various sizes from the range of 2-8.</p>
                                         <CardActions className = 'cardButtons'>
-                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
-                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Queens' target='_blank'>View on GitHub</a>
+                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px', border: 'solid #0cf2ad 2px'}} colored>
+                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/K-Means-Fuzzy-C-Means' target='_blank'>View on GitHub</a>
                                             </Button> 
                                         </CardActions>
                                     </Card>

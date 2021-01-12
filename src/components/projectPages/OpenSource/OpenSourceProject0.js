@@ -25,8 +25,8 @@ class OpenSourceProject0 extends Component{
                                         <div className ='separatorThree' />
                                         <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>The final project for Open Source was completed by a group of me and three other students. Our task was to create an open source tool that was useful. It also had to make sense in regard to it being open source. We decided to build a website in React, which we called Uncle Buck: an open source tool with the purpose of assisting someone from a financial standpoint. We built our own financial calculator that returned helpful information based on users' answers to personal finance questions. Additionally, we provided articles pulled from an API that also had the objective of providing financial insight and advice.</p>
                                         <CardActions className = 'cardButtons'>
-                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
-                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Queens' target='_blank'>View on GitHub</a>
+                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px', border: 'solid #0cf2ad 2px'}} colored>
+                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/updatedUncleBuckProject' target='_blank'>View on GitHub</a>
                                             </Button>  
                                         </CardActions>
                                     </Card>

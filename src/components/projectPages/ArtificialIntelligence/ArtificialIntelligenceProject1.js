@@ -107,7 +107,7 @@ class ArtificialIntelligenceProject1 extends Component{
                                         <div className ='separatorTwo' />
                                         <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>This program starts with eight queens randomly disbursed across a chessboard. Using a genetic algorithm, this program will eventually find a solution to place all eight queens in their own row and column.</p>
                                         <CardActions className = 'cardButtons'>
-                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
+                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px', border: 'solid #0cf2ad 2px'}} colored>
                                                 <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Queens' target='_blank'>View on GitHub</a>
                                             </Button> 
                                         </CardActions>

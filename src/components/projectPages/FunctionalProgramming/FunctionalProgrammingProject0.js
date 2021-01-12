@@ -26,7 +26,7 @@ class FunctionalProgrammingProject0 extends Component{
                                         <div className ='separatorThree' />
                                         <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>Like other classes, students were given complete freedom for final projects in the functional programming course I took. Of course, the main requirement was to use a functional programming language. Using Haskell, I ended up creating a Sudoku puzzle solver after finding enjoyment in similar projects from AI.</p>
                                         <CardActions className = 'cardButtons'>
-                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
+                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px', border: 'solid #0cf2ad 2px'}} colored>
                                                 <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Queens' target='_blank'>View on GitHub</a>
                                             </Button> 
                                         </CardActions>

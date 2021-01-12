@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import sparty from "./sparty.png";
 import {Grid, Cell} from "react-mdl";
 import backgroundVid from "./backgroundVideo.mp4";
+import headshot from "./headshot2.jpg";
 function AboutMe() {
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
@@ -23,8 +24,10 @@ function AboutMe() {
       </div>
       <div className="Parallax__content__cta">
         <p style={{fontSize: '1.53rem', lineHeight: '100%'}}>
-          Hello, my name is Patrick Rademacher, and welcome to my online portfolio! Recently, I graduated with a master's in computer science from Portland State University. I'm mainly interested in data science, machine learning, artificial intelligence, digital signal processing, front-end web development, and software engineering. I aim to find a position rooted within one of these domains (or something similar) through a company or workplace that values a strong work ethic, clear and open communication, and an open-minded approach to asking questions and working with others to solve problems. 
+          Hello, my name is Patrick Rademacher, and welcome to my online portfolio! Recently, I graduated with a master's in computer science from Portland State University. I'm mainly interested in data science, machine learning, artificial intelligence, digital signal processing, front-end web development, and software engineering. I aim to find a position rooted within one of these domains (or something similar) through a company or workplace that values a strong work ethic, clear and open communication, and an open-minded approach to working with others to solve problems. 
         </p>
+          <img style={{width: '100%'}} src={headshot}>
+        </img>
       </div>
     </>
   );
@@ -33,7 +36,7 @@ function AboutMe() {
     <>
   
       <div className="Parallax__content__heading">
-        <h1 className="Parallax__content__heading__text">A Background in Teaching</h1>
+        <h1 className="Parallax__content__heading__text">Background in Teaching</h1>
       </div>
       <div className="Parallax__content__cta">
         <p style={{fontSize: '1.53rem', lineHeight: '100%'}}>
@@ -54,7 +57,7 @@ function AboutMe() {
       </div>
       <div className="Parallax__content__cta">
         <p style={{fontSize: '1.53rem', lineHeight: '100%'}}>
-          In addition to programming and teaching, I also have a love and passion for music and playing guitar that is just strong and important to me. After my internship, I pursued my dream of playing in a band with all seriousness, which I knew could not coexist with the profession of a teacher, which has taken me to where I am today. Although it's not in front of an audience anymore with the band days long over, I am still an avid player and find great joy and meaning in creating music. 
+          In addition to programming and teaching, I also have a love and passion for music and playing guitar. I'll throw up some videos and links to my stuff in the near future!
         </p>
       </div>
     </>

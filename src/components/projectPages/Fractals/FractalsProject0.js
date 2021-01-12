@@ -25,7 +25,7 @@ class FractalsProject0 extends Component{
                                         <div className ='separatorThree' />
                                         <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>Throughout the Fractals class, our understanding and knowledge of coding fractal images was a continuous build from whatever we learned prior. We were then had to create a journal with a minimum of five fractal images we created, each with a detailed description of the mathematics and concepts necessary, what the overall process entailed in terms of success and struggles, and the artistic motive or reason involved with choosing the type of fractal and what it represented.</p>
                                         <CardActions className = 'cardButtons'>
-                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
+                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px', border: 'solid #0cf2ad 2px'}} colored>
                                                 <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Queens' target='_blank'>View on GitHub</a>
                                             </Button>  
                                         </CardActions>

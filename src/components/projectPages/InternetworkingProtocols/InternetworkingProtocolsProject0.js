@@ -26,8 +26,8 @@ class InternetworkingProtocolsProject0 extends Component{
                                         <div className ='separatorThree' />
                                         <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>With the task of building a messaging application with a programming language of our choice, another student and I created PAT CHAT. We decided to go with Python, which then called for integrating its respective threading and socket modules. The end result was a successful chatroom application with features such as users creating their own username and password, the ability to create and delete their own chatrooms and chatroom themes, and communication with other app users if on the same local network.</p>
                                         <CardActions className = 'cardButtons'>
-                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
-                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Queens' target='_blank'>View on GitHub</a>
+                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px', border: 'solid #0cf2ad 2px'}} colored>
+                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/tlan2/instant_message_chatroom' target='_blank'>View on GitHub</a>
                                             </Button> 
                                         </CardActions>
                                     </Card>

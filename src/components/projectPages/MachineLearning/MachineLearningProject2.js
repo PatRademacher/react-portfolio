@@ -26,8 +26,8 @@ class MachineLearningProject2 extends Component{
                                         <div className ='separatorThree' />
                                         <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>As a member of a group with three other students, our project was formed by recreating another research project that attempts to predict the total number of games played for NBA Draft picks during their first five years in the league. The information for each player comes from their draft data, college statistics, and biometric data and is then applied to three ML algorithms to make predictions: Logisitic Regression, SVM, and Random Forest.</p>
                                         <CardActions className = 'cardButtons'>
-                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
-                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Queens' target='_blank'>View on GitHub</a>
+                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px', border: 'solid #0cf2ad 2px'}} colored>
+                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/charboltron/NBA_Machine_Learning' target='_blank'>View on GitHub</a>
                                             </Button> 
                                         </CardActions>
                                     </Card>

@@ -26,8 +26,8 @@ class MusicAndDigitalSignalProcessingProject0 extends Component{
                                         <div className ='separatorThree' />
                                         <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>For the accelerated postbac program necessary to be admitted to grad school, all students had to make a project on anything as long as approved by the professor. Having a deep, strong passion for guitar and audio effects, I built and then programmed my own guitar effects pedal using a Raspberry Pi Zero. I ended up making it a multi-effects pedal with delay, a phaser, a flanger, and pitch shifter by attempting to digitally mimic how these effects work from an analog standpoint.  </p>
                                         <CardActions className = 'cardButtons'>
-                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
-                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Queens' target='_blank'>View on GitHub</a>
+                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px', border: 'solid #0cf2ad 2px'}} colored>
+                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/PedalPi' target='_blank'>View on GitHub</a>
                                             </Button> 
                                         </CardActions>
                                     </Card>

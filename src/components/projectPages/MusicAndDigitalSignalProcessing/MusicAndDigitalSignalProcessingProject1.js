@@ -26,7 +26,7 @@ class MusicAndDigitalSignalProcessingProject1 extends Component{
                                         <div className ='separatorThree' />
                                         <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>Along with two other students, our group used a program called Pure Data to create our own digital synthesizer. In addition to basic synthesizer functionalities, we also implemented a phaser, an effects loop, and an arpeggiator. We also used various display features such as coloring and blinking for buttons and knobs from the synthesizeral as additional means to demonstrate how these features worked.</p>
                                         <CardActions className = 'cardButtons'>
-                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
+                                            <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px', border: 'solid #0cf2ad 2px'}} colored>
                                                 <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Queens' target='_blank'>View on GitHub</a>
                                             </Button> 
                                         </CardActions>

@@ -27,8 +27,8 @@ class MachineLearningProject0 extends Component{
                                         <p style={{color: '#556270', textAlign: 'center', width: '70%', justifyContent: 'center', margin: 'auto'}}>A classic project in the ML world, MNIST uses a data training set comprised of images of handwritten digits so the program 'learns' how to distinguish and select their correct values using a neural network. From there, its overall accuracy is then measured by its selections of values from the test set data of handwritten digit images, which are not revealed to the program until it's done training.</p>
                                         <CardActions className = 'cardButtons'>
                                             
-                                        <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px'}} colored>
-                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/AI-8-Puzzle' target='_blank'>View on GitHub</a>
+                                        <Button  style={{fontSize: '1.45em', color: '#ee8d8d', backgroundColor: '#556270', paddingLeft: '2px', paddingRight: '2px', border: 'solid #0cf2ad 2px'}} colored>
+                                                <a style={{color: '#ee8d8d', backgroundColor: '#556270'}} href='https://github.com/PatRademacher/MNIST' target='_blank'>View on GitHub</a>
                                         </Button>
                                         </CardActions>
                                     </Card>
