@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-import { Grid, Cell } from 'react-mdl';
-import pic from './resume_picpic.png';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import backgroundVid from './backgroundVideo.mp4';
@@ -44,10 +41,10 @@ class LandingPage extends Component {
                         </Col>
                         <Col />
                     </Row>
-                    <Row style={{height: '57vh', alignItems: 'flex-end', bottom: '0', paddingTop: '2vh', position: 'fixed', width: '100%', display: 'flex'}}>
+                    <Row style={{height: '57vh', alignItems: 'flex-end', bottom: '0', paddingTop: '2vh', position: 'relative', width: '100%', display: 'flex', margin: 'auto', justifyContent: 'center'}}>
                         
                             <Col />
-                            <Col className="banner-text" xs={10} sm={10} md={10} lg={10} xl={10}>
+                            <Col className="banner-text" xs={12} sm={10} md={10} lg={10} xl={8}>
                                 
                                     <h1>Patrick Rademacher: 
                                         <br></br>

@@ -52,7 +52,7 @@
   width: 100%;
   /*height: calc(41vh + .4em);*/
   height: 48vh;
-  position: fixed;
+  position: relative;
   
 }
 
