@@ -261,18 +261,7 @@ class TestingPage extends Component{
                             <p className="wiggles" >MODELING AND SIMULATION IN PYTHON</p>
                         </Col>
                     </Row>
-                    <Row style={{position: 'static', width: '100%'}}>
-                        <Col className={this.state.colStates[12]} xs = {12} sm={4} md={4} lg={4} onClick={() => this.setActiveTab(12)} onMouseEnter={() => this.setWiggle(12, 'nonactiveColsHover')} onMouseLeave={() => this.setWiggle(12, 'nonactiveCols')}>
-                            <p className="wiggles" >ALGORITHMS</p>
-                        </Col>
-                        <Col className={this.state.colStates[13]} xs = {12} sm={4} md={4} lg={4} onClick={() => this.setActiveTab(13)} onMouseEnter={() => this.setWiggle(13, 'nonactiveColsHover')} onMouseLeave={() => this.setWiggle(13, 'nonactiveCols')}>
-                            <p className="wiggles">THEORY OF COMPUTATION</p>
-                        </Col>
-                        <Col className={this.state.colStates[14]} xs = {12} sm={4} md={4} lg={4} onClick={() => this.setActiveTab(14)} onMouseEnter={() => this.setWiggle(14, 'nonactiveColsHover')} onMouseLeave={() => this.setWiggle(14, 'nonactiveCols')}>
-                            <p className="wiggles">QUANTUM COMPUTING</p>
-                        </Col>
-                      
-                    </Row>
+                    
                 </div>
                 <div style={{marginTop: this.projectTabs.clientHeight/8.0}} />
                             <h1 className = 'projectsPageHeader' ref={dp => { this.displayProjects = dp; }} style={{backgroundColor: 'black', opacity: '.72', marginTop: this.projectTabs.clientHeight/4.0}}>{this.state.currentHeader}</h1>

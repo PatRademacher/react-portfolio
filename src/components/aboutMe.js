@@ -51,9 +51,7 @@ function AboutMe() {
   
       <div className="Parallax__content__heading">
         <h1 className="Parallax__content__heading__text">My Side Gig</h1>
-        <h2 className="Parallax__content__heading__caption">
-          Your one-stop source of Web Development tricks
-        </h2>
+        
       </div>
       <div className="Parallax__content__cta">
         <p style={{fontSize: '1.53rem', lineHeight: '100%'}}>

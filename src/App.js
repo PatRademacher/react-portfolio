@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import { Layout, Header, Navigation, Drawer} from 'react-mdl';
 import Main from './components/main.js';
 import { Link } from 'react-router-dom';
 //import { faGasPump, faHome } from "@fortawesome/free-solid-svg-icons";
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import testIcon from './backgroundLarge.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 class App extends Component {
 
@@ -21,7 +22,9 @@ class App extends Component {
         return (
             <div className="demo-big-content" >
                 <Layout style={{top: '0', height: '100vh'}}>
-                    <Header className="header-color" style={{height: this.state.navHeight, minHeight: '5px'}} title={<Link style={{color: 'white'}} to="/">My Portfolio</Link>} scroll>
+                
+                    
+                    <Header className="header-color" style={{height: this.state.navHeight, minHeight: '5px'}} title={<Link style={{color: 'white'}} to="/">Patrick Rademacher's Portfolio</Link>} scroll>
                         <Navigation>
                             <Link to="/resume">Resume</Link>
                             <Link to="/aboutme">About Me</Link>
@@ -29,7 +32,7 @@ class App extends Component {
                             <Link to="/contact">Contact</Link>
                         </Navigation>
                     </Header>
-                    <Drawer title={<Link style={{textDecoration: 'none', color: 'black', }} to="/">My Portfolio</Link>} scroll>
+                    <Drawer style={{color: 'yellow'}} title={<Link style={{color: '#0cf2ad', }} to="/">Patrick Rademacher's Portfolio</Link>} scroll>
                         <Navigation>
                             <Link to="/resume">Resume</Link>
                             <Link to="/aboutme">About Me</Link>

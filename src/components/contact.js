@@ -79,7 +79,6 @@ class Contact extends React.Component {
       <Col className='contact-grid' xs={6} sm={7} md={8} lg={8} xl={8} style={{opacity: '.73'}}>
     <MDBContainer>
         <form onSubmit={this.handleSubmit.bind(this)} method="POST">
-        <p>Contact Me: Use My Form</p>
         <div>
         <Row style={{display: 'flex', justifyContent: 'center'}}>
             <Col sm = {10}>
