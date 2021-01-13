@@ -47,7 +47,7 @@ class LandingPage extends Component {
                     <Row style={{height: '57vh', alignItems: 'flex-end', bottom: '0', paddingTop: '2vh', position: 'fixed', width: '100%', display: 'flex'}}>
                         
                             <Col />
-                            <Col className="banner-text" xs={12} sm={10} md={8} lg={8} xl={8}>
+                            <Col className="banner-text" xs={10} sm={10} md={10} lg={10} xl={10}>
                                 
                                     <h1>Patrick Rademacher: 
                                         <br></br>
